@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neuville Townhomes - Modern luxury townhomes in Sanja Mayor, Tanza, Cavite. Premium community living with resort-style amenities and thoughtfully designed homes.">
+    <meta name="keywords" content="townhomes, Tanza Cavite, luxury homes, community living, Neuville, modern townhomes, new construction">
+    <meta property="og:title" content="Neuville Townhomes - Premium Community Living">
+    <meta property="og:description" content="Modern luxury townhomes designed for contemporary living in Sanja Mayor, Tanza, Cavite. Schedule your tour today!">
+    <meta property="og:type" content="website">
+    <title>Neuville Townhomes - Premium Community Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <img src="images/logo.png" alt="Neuville Townhomes" class="logo">
+                <a href="index.html"><span class="brand-text">Neuville Townhomes</span></a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="nav-menu" id="nav-menu">
+                <a href="#homes" class="nav-link">Homes</a>
+                <a href="#amenities" class="nav-link">Amenities</a>
+                <a href="#location" class="nav-link">Location</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="cta-button" onclick="scrollToSection('contact')">Schedule Tour</button>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Welcome to <span class="accent-text">Neuville</span> Townhomes
+            </h1>
+            <p class="hero-subtitle">
+                Modern luxury living in a vibrant community designed for the way you live today
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('homes')">
+                    View Available Homes
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                    Schedule a Tour
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="chevron-down"></div>
+        </div>
+    </section>
+
+    <!-- Property Showcase -->
+    <section id="homes" class="property-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2>Thoughtfully Designed Homes</h2>
+                <p>Each townhome features premium finishes, open-concept living, and modern amenities designed to enhance your lifestyle</p>
+            </div>
+            
+            <div class="image-grid">
+                <div class="image-card">
+                    <img src="images/image.jpg" alt="Modern Neuville Townhomes" loading="lazy">
+                    <div class="image-overlay">
+                        <h3>Modern Townhomes</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/pocket2gardens_PhotoGrid.png" alt="Pocket Gardens" loading="lazy">
+                    <div class="image-overlay">
+                        <h3>Pocket Gardens</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/clubhouse.jpg" alt="Community Clubhouse" loading="lazy">
+                    <div class="image-overlay">
+                        <h3>Community Clubhouse</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/familyhappy.jpg" alt="Happy Family Living" loading="lazy">
+                    <div class="image-overlay">
+                        <h3>Family Living</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/mypic.jpg" alt="Swimming Pool" loading="lazy">
+                    <div class="image-overlay">
+                        <h3>Swimming Pool</h3>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <img src="images/clubhouse1_PhotoGrid.png" alt="Resort Amenities" loading="lazy">
+                    <div class="image-overlay">
+                        <h3>Resort-Style Amenities</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏠</div>
+                    <h3>3 Bedrooms</h3>
+                    <p>Spacious layouts designed for modern living with flexible spaces</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📐</div>
+                    <h3>60.40 sq m</h3>
+                    <p>Generous floor area with high ceilings and open floor plans</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Pocket Gardens</h3>
+                    <p>Every home includes outdoor living space perfect for relaxation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interior Showcase -->
+    <section class="interior-showcase">
+        <div class="container">
+            <div class="section-header">
+                <h2>Premium Interiors</h2>
+                <p>Step inside to discover meticulously crafted interiors featuring high-end finishes and thoughtful design details</p>
+            </div>
+            
+            <div class="interior-grid">
+                <div class="interior-card">
+                    <img src="images/br-ms.jpg" alt="Master Bedroom Interior" loading="lazy">
+                    <div class="interior-info">
+                        <h3>Master Suite</h3>
+                        <p>Natural light & botanical wallpaper</p>
+                    </div>
+                </div>
+                <div class="interior-card">
+                    <img src="images/m_br-ms.jpg" alt="Secondary Bedroom" loading="lazy">
+                    <div class="interior-info">
+                        <h3>Secondary Bedroom</h3>
+                        <p>Comfortable & stylish</p>
+                    </div>
+                </div>
+                <div class="interior-card">
+                    <img src="images/m_br1-ms.jpg" alt="Bedroom Interior Design" loading="lazy">
+                    <div class="interior-info">
+                        <h3>Bedroom Interiors</h3>
+                        <p>Premium finishes throughout</p>
+                    </div>
+                </div>
+                <div class="interior-card">
+                    <img src="images/br-ms.jpg" alt="Quality Interior Spaces" loading="lazy">
+                    <div class="interior-info">
+                        <h3>Quality Interiors</h3>
+                        <p>Thoughtfully designed spaces</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities Section -->
+    <section id="amenities" class="amenities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community Amenities</h2>
+                <p>Enjoy resort-style amenities and thoughtfully designed community spaces that enhance your lifestyle</p>
+            </div>
+            
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <img src="images/mypic.jpg" alt="Resort-Style Pool" loading="lazy">
+                    <div class="amenity-content">
+                        <h3>Resort-Style Pool</h3>
+                        <p>Relax and unwind in our beautiful pool area</p>
+                    </div>
+                </div>
+                <div class="amenity-card">
+                    <img src="images/clubhouse.jpg" alt="Community Clubhouse" loading="lazy">
+                    <div class="amenity-content">
+                        <h3>Community Clubhouse</h3>
+                        <p>Perfect for gatherings and community events</p>
+                    </div>
+                </div>
+                <div class="amenity-card">
+                    <img src="images/clubhouse1_PhotoGrid.png" alt="Modern Amenities" loading="lazy">
+                    <div class="amenity-content">
+                        <h3>Modern Amenities</h3>
+                        <p>State-of-the-art community facilities</p>
+                    </div>
+                </div>
+                <div class="amenity-card">
+                    <img src="images/pocket2gardens_PhotoGrid.png" alt="Landscaped Gardens" loading="lazy">
+                    <div class="amenity-content">
+                        <h3>Landscaped Gardens</h3>
+                        <p>Beautiful green spaces throughout the community</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="additional-amenities">
+                <div class="amenity-item">
+                    <span class="amenity-icon">⚡</span>
+                    <span>Electric Vehicle Charging</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">📅</span>
+                    <span>Community Events</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">📍</span>
+                    <span>Prime Location</span>
+                </div>
+                <div class="amenity-item">
+                    <span class="amenity-icon">🛡️</span>
+                    <span>24/7 Security</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sanja Mayor, Tanza, Cavite</h2>
+                <p>Strategically located in the peaceful and fast-developing area of Barangay Sanja Mayor, offering the perfect balance of tranquility and accessibility</p>
+            </div>
+            
+            <div class="location-content">
+                <div class="location-images">
+                    <div class="main-location-image">
+                        <img src="images/image.jpg" alt="Neuville Townhomes Location" loading="lazy">
+                    </div>
+                    <div class="location-grid">
+                        <img src="images/clubhouse.jpg" alt="Community Area" loading="lazy">
+                        <img src="images/pocket2gardens_PhotoGrid.png" alt="Neighborhood" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="location-features">
+                    <h3>Everything You Need Nearby</h3>
+                    <div class="location-feature">
+                        <div class="feature-icon">🏢</div>
+                        <div class="feature-content">
+                            <h4>Shopping & Dining</h4>
+                            <p>Walk to trendy restaurants, cafes, and boutique shops just minutes from your door</p>
+                        </div>
+                    </div>
+                    <div class="location-feature">
+                        <div class="feature-icon">🚗</div>
+                        <div class="feature-content">
+                            <h4>Transit Connections</h4>
+                            <p>Easy access to public transportation and major highways for seamless commuting</p>
+                        </div>
+                    </div>
+                    <div class="location-feature">
+                        <div class="feature-icon">🏞️</div>
+                        <div class="feature-content">
+                            <h4>Parks & Recreation</h4>
+                            <p>Close to beautiful parks, trails, and recreational facilities for active living</p>
+                        </div>
+                    </div>
+                    <div class="location-feature">
+                        <div class="feature-icon">🎓</div>
+                        <div class="feature-content">
+                            <h4>Schools & Education</h4>
+                            <p>Top-rated schools and educational institutions within the district</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floor Plans -->
+    <section class="floor-plans">
+        <div class="container">
+            <div class="section-header">
+                <h2>Floor Plans & Pricing</h2>
+                <p>Choose from our thoughtfully designed floor plans, each offering flexible living spaces and premium features</p>
+            </div>
+            
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-info">
+                            <h3>The Astrid (Dressed Up)</h3>
+                            <p>3 Bed • 2 Bath</p>
+                        </div>
+                        <div class="plan-price">
+                            <span class="price-label">Starting at</span>
+                            <span class="price">₱3.8M</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-details">
+                        <div class="detail-row">
+                            <span>Floor Area:</span>
+                            <span>60.40 sq m</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Stories:</span>
+                            <span>2</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Carport:</span>
+                            <span>1-Car</span>
+                        </div>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <div class="feature">✓ Three (3) bedrooms</div>
+                        <div class="feature">✓ Two (2) toilet & bath</div>
+                        <div class="feature">✓ Balcony</div>
+                        <div class="feature">✓ One (1) carport provision</div>
+                        <div class="feature">✓ Pocket garden</div>
+                        <div class="feature">✓ Laundry / utility area</div>
+                    </div>
+                    
+                    
+                    <button class="btn btn-primary plan-btn">View Floor Plan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to make Neuville Townhomes your new home? Contact us today to schedule a tour or learn more about availability</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Our Sales Center</h3>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>Sanja Mayor<br>Tanza, Cavite</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>(+63)952-418-2918</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-text">
+                                <h4>Hours</h4>
+                                <p>Monday - Saturday: 10am - 6pm<br>Sunday: 12pm - 5pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-actions">
+                        <h4>Quick Actions</h4>
+                        <button class="btn btn-primary" onclick="showContactForm()">Schedule a Tour</button>
+                        <button class="btn btn-secondary" onclick="downloadBrochure()">Download Brochure</button>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container" id="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interest">I'm Interested In</label>
+                            <select id="interest" name="interest">
+                                <option value="">Please select...</option>
+                                <option value="tour">Scheduling a tour</option>
+                                <option value="astrid-dressed">The Astrid (Dressed Up)</option>
+                                <option value="astrid-bare">The Astrid (Bare Unit)</option>
+                                <option value="pricing">Pricing information</option>
+                                <option value="financing">Financing options</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us more about what you're looking for..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+                        
+                        <p class="form-disclaimer">
+                            By submitting this form, you agree to receive communications from Neuville Townhomes. You can unsubscribe at any time.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/logo.png" alt="Neuville Townhomes" class="logo">
+                        <span class="brand-text">Neuville Townhomes</span>
+                    </div>
+                    <p class="footer-description">
+                        Modern luxury townhomes designed for contemporary living in a vibrant community setting.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Quick Links</h4>
+                        <a href="#homes">Available Homes</a>
+                        <a href="#amenities">Amenities</a>
+                        <a href="#location">Location</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Resources</h4>
+                        <a href="#">Financing Options</a>
+                        <a href="#">Virtual Tours</a>
+                        <a href="#">Homeowner Portal</a>
+                        <a href="#">Warranty Information</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Neuville Townhomes. All rights reserved. | 
+                   <a href="#">Privacy Policy</a> | 
+                   <a href="#">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

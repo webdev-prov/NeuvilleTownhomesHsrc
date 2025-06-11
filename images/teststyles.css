@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url('images./ua.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+button {
+  background-color: red;
+  color: lightgreen;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+button:hover {
+background-color: lightgreen;   
+  color: red;                 
+  font-weight: 900;  
+  transform: scale(1.05);
+  text-shadow: 0 0 2px #000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);}
+
+
+
+.transparent-window {
+  height: 120vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  backdrop-filter: blur(2.5px);
+}
+
+.window-content {
+  padding: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  text-align: left;
+  max-width: 800px;
+  backdrop-filter: blur(2.5px);
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  margin-left: 100px;
+  display: inline-block;
+  width: fit-content;
+  overflow-x: auto;
+}
+
+h1 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.opaque-content,
+.opaque-content1,
+.opaque-content2{
+  padding: 50px;
+  min-height: 400px;
+  color: #333;
+}
+.opaque-content {
+  background: linear-gradient(to top,  burlywood, rgba(255,255,255,0.9))
+}
+.opaque-content1 {
+  background: linear-gradient(to top, #C3B091, tan, burlywood)
+}
+.opaque-content2 {
+  background-color: #C3B091;
+}
+
+.intro-text,
+.toilet-info,
+.container,
+.bedroom-container,
+.project-overview,
+.f4align,
+.justify {
+  margin-left: 5em;
+}
+
+.container img,
+.bath-img-2,
+.bath-img-1,
+.main-bedroom-img-1,
+.main-bedroom-img-2 {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.bath-img-1 {
+  margin-right: 50px;
+}
+
+.main-bedroom-img-1 {
+  margin-left: 260px;
+  border-radius: 20px;
+}
+
+.text-side-by-side {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.text-side-by-side h2,
+.text-side-by-side p {
+  margin: 20px;
+}
+.justify {
+  text-align: justify;
+  margin-right: 10em;
+}
+.myh3 {
+  font-family: palatino;
+}
+
+/* Scroll animation */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+  will-change: opacity, transform;
+}
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile responsive tweaks */
+@media (max-width: 768px) {
+  .window-content {
+    margin-left: 1em;
+    font-size: 1.2rem;
+    max-width: 90%;
+    backdrop-filter: blur(2.5px);
+  }
+
+  .text-side-by-side {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container img,
+  .main-bedroom-img-1,
+  .main-bedroom-img-2,
+  .bath-img-2,
+  .bath-img-1 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .intro-text,
+  .toilet-info,
+  .container,
+  .bedroom-container {
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+  }
+}
+
+img:hover {
+  transform: scale(1.05);
+  transition: transform 2s ease;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+img {
+  transition: transform 4s ease, box-shadow 0.3s ease;
+}
+
+.opaque-content3 {
+  background-color: #D8CFC4;
+}
+
+.hpfm {
+  width: 15em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  border-radius: 8px;
+  margin-left: 23em;
+}
+#hfid{
+    margin-left: 10em;
+}
+
+.opaque-content4{
+  background: linear-gradient(to top, rgba(255,255,255,0.9), #f1ecea);
+  padding: 50px;
+  min-height: 400px;
+  color: #333;
+}
+.opaque-content5{
+  background-color: bisque;
+  padding: 50px;
+  min-height: 400px;
+  color: #333;
+}
+.fixed-button-container img{
+  opacity: 1;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-left: 0px
+}
+.fixed-button-container {
+  position: fixed;
+  top: 10px;
+  right: 150px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.5;
+  padding: 5px;
+  border-radius: 10px;
+}
+img #imgsrcf:hover{
+  transform: scale(1.2);
+}
+.divindiv{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-left: 30em;
+}
+.alignment{
+  display: flex
+}
+.opaque-content6 {
+background-color: blanchedalmond;
+  padding: 50px;
+  min-height: 400px;
+  color: #333;
+}
+.b4po{
+  width: 30em;
+  border-radius: 10px;
+}
+.fixed-button-container:hover{
+opacity: 2;
+}
+
+.forfw{
+  font-size: 3em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.window-content p,
+.window-content h1,
+.window-content h6 {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+.lastsec{
+  background-color: #3e2724;
+  padding: 50px;
+  min-height: 400px;
+  color: #333;
+}
+.git{
+  color: #c4b693;
+  text-align: center;
+}
+.text-side-by-side {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: flex-start; /* Ensure items align at the start */
+}
+.f4align {
+  flex: 1; /* Allow it to take available space */
+  min-width: 200px;
+}
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
