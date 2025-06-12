@@ -1000,4 +1000,7 @@ a:focus {
         color: var(--white);
         padding: 2rem;
     }
+    #favicon{
+        border-radius: 3.125em;
+    }
 }
